@@ -1,0 +1,78 @@
+#quiz {
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4edf5; /* Light purple-pink background */
+    color: #333; /* Dark text color */
+    margin: 20px;
+}
+
+h2 {
+    color: #7d3cf8; /* Purple header color */
+}
+
+audio {
+    margin-bottom: 10px;
+}
+
+div {
+    background-color: #fff; /* White background for answer containers */
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Custom radio button style */
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #7d3cf8; /* Purple border */
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    margin-right: 5px;
+    position: relative;
+}
+
+/* Radio button checked style */
+input[type="radio"]:checked::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #7d3cf8; /* Purple fill */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Styling for the "Play" button */
+audio::-webkit-media-controls-start-playback-button {
+    display: none;
+}
+
+audio::-webkit-media-controls-play-button {
+    display: none;
+}
+
+audio {
+    width: 100%;
+}
+
