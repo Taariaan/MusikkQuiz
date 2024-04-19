@@ -10,7 +10,7 @@ document.getElementById("checkAnswers").addEventListener("click", function() {
 
     let selectedSong1 = document.querySelector('input[name="song1"]:checked + label').textContent;
     let container1 = document.getElementById("song1");
-    container1.classList.remove("correct", "wrong"); // Remove existing classes
+    container1.classList.remove("correct", "wrong");
     setTimeout(() => {
         if (selectedSong1 === correctAnswers.song1) {
             score++;
@@ -22,7 +22,7 @@ document.getElementById("checkAnswers").addEventListener("click", function() {
 
     let selectedSong2 = document.querySelector('input[name="song2"]:checked + label').textContent;
     let container2 = document.getElementById("song2");
-    container2.classList.remove("correct", "wrong"); // Remove existing classes
+    container2.classList.remove("correct", "wrong");
     setTimeout(() => {
         if (selectedSong2 === correctAnswers.song2) {
             score++;
@@ -34,7 +34,7 @@ document.getElementById("checkAnswers").addEventListener("click", function() {
 
     let selectedSong3 = document.querySelector('input[name="song3"]:checked + label').textContent;
     let container3 = document.getElementById("song3");
-    container3.classList.remove("correct", "wrong"); // Remove existing classes
+    container3.classList.remove("correct", "wrong"); 
     setTimeout(() => {
         if (selectedSong3 === correctAnswers.song3) {
             score++;
