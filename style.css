@@ -68,3 +68,11 @@ audio {
 button {
     margin-top: 20px
 }
+
+.correct {
+    background-color: #9fe89f;
+}
+
+.wrong {
+    background-color: #ff9999;
+}
