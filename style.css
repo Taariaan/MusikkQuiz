@@ -1,16 +1,17 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #ddc7e0;
+    background-color: #f4edf5;
     color: #333;
     margin: 20px;
 }
 
 h2 {
-    color: #524356;
+    color: #7d3cf8;
 }
 
 audio {
     margin-bottom: 10px;
+    margin-top: 10px
 }
 
 .container {
@@ -20,7 +21,7 @@ audio {
 }
 
 .container > div {
-    background-color: #fff; 
+    background-color: #fff;
     padding: 15px;
     border-radius: 5px;
 }
@@ -40,7 +41,7 @@ input[type="radio"] {
     -moz-appearance: none;
     width: 20px;
     height: 20px;
-    border: 2px solid #7d3cf8; /* Purple border */
+    border: 2px solid #7d3cf8; 
     border-radius: 50%;
     cursor: pointer;
     outline: none;
@@ -48,12 +49,11 @@ input[type="radio"] {
     position: relative;
 }
 
-/* Radio button checked style */
 input[type="radio"]:checked::before {
     content: '';
     width: 10px;
     height: 10px;
-    background-color: #7d3cf8; /* Purple fill */
+    background-color: #7d3cf8;
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -61,15 +61,10 @@ input[type="radio"]:checked::before {
     transform: translate(-50%, -50%);
 }
 
-/* Styling for the "Play" button */
-audio::-webkit-media-controls-start-playback-button {
-    display: none;
-}
-
-audio::-webkit-media-controls-play-button {
-    display: none;
-}
-
 audio {
     width: 100%;
+}
+
+button {
+    margin-top: 20px
 }
