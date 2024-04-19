@@ -10,31 +10,39 @@ document.getElementById("checkAnswers").addEventListener("click", function() {
 
     let selectedSong1 = document.querySelector('input[name="song1"]:checked + label').textContent;
     let container1 = document.getElementById("song1");
-    if (selectedSong1 === correctAnswers.song1) {
-        score++;
-        container1.classList.add("correct");
-    } else {
-        container1.classList.add("wrong");
-    }
+    container1.classList.remove("correct", "wrong"); // Remove existing classes
+    setTimeout(() => {
+        if (selectedSong1 === correctAnswers.song1) {
+            score++;
+            container1.classList.add("correct");
+        } else {
+            container1.classList.add("wrong");
+        }
+    }, 100);
 
     let selectedSong2 = document.querySelector('input[name="song2"]:checked + label').textContent;
     let container2 = document.getElementById("song2");
-    if (selectedSong2 === correctAnswers.song2) {
-        score++;
-        container2.classList.add("correct");
-    } else {
-        container2.classList.add("wrong");
-    }
+    container2.classList.remove("correct", "wrong"); // Remove existing classes
+    setTimeout(() => {
+        if (selectedSong2 === correctAnswers.song2) {
+            score++;
+            container2.classList.add("correct");
+        } else {
+            container2.classList.add("wrong");
+        }
+    }, 100);
 
     let selectedSong3 = document.querySelector('input[name="song3"]:checked + label').textContent;
     let container3 = document.getElementById("song3");
-    if (selectedSong3 === correctAnswers.song3) {
-        score++;
-        container3.classList.add("correct");
-    } else {
-        container3.classList.add("wrong");
-    }
+    container3.classList.remove("correct", "wrong"); // Remove existing classes
+    setTimeout(() => {
+        if (selectedSong3 === correctAnswers.song3) {
+            score++;
+            container3.classList.add("correct");
+        } else {
+            container3.classList.add("wrong");
+        }
+    }, 100);
 
     result.textContent = "Your score: " + score + " out of 3";
 });
-
