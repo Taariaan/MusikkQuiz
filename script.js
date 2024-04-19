@@ -25,3 +25,4 @@ document.getElementById("checkAnswers").addEventListener("click", function() {
 
     result.textContent = "Your score: " + score + " out of 3";
 });
+
