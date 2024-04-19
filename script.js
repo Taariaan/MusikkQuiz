@@ -8,26 +8,21 @@ document.getElementById("checkAnswers").addEventListener("click", function() {
     let result = document.getElementById("result");
     let score = 0;
 
-    let selectedSong1 = document.querySelector('input[name="song1"]:checked');
-    if (selectedSong1) {
-        if (selectedSong1.nextSibling.textContent.trim() === correctAnswers.song1) {
-            score++;
-        }
+    let selectedSong1 = document.querySelector('input[name="song1"]:checked + label').textContent;
+    if (selectedSong1 === correctAnswers.song1) {
+        score++;
     }
 
-    let selectedSong2 = document.querySelector('input[name="song2"]:checked');
-    if (selectedSong2) {
-        if (selectedSong2.nextSibling.textContent.trim() === correctAnswers.song2) {
-            score++;
-        }
+    let selectedSong2 = document.querySelector('input[name="song2"]:checked + label').textContent;
+    if (selectedSong2 === correctAnswers.song2) {
+        score++;
     }
 
-    let selectedSong3 = document.querySelector('input[name="song3"]:checked');
-    if (selectedSong3) {
-        if (selectedSong3.nextSibling.textContent.trim() === correctAnswers.song3) {
-            score++;
-        }
+    let selectedSong3 = document.querySelector('input[name="song3"]:checked + label').textContent;
+    if (selectedSong3 === correctAnswers.song3) {
+        score++;
     }
 
     result.textContent = "Your score: " + score + " out of 3";
 });
+
