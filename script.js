@@ -6,7 +6,8 @@ document.getElementById("checkAnswers").addEventListener("click", function() {
     };
 
     let nonSongAnswers = {
-        song4: "Aretha Franklin"
+        song4: "Aretha Franklin", // Add a comma here
+        song5: "Max Martin"
     };
 
     let result = document.getElementById("result");
@@ -26,6 +27,13 @@ document.getElementById("checkAnswers").addEventListener("click", function() {
 
             if (index === 3) { // Checking for non-song question
                 if (selectedSong === nonSongAnswers.song4) {
+                    score++;
+                    container.classList.add("correct");
+                } else {
+                    container.classList.add("wrong");
+                }
+            } else if (index === 4) { // Checking for non-song question
+                if (selectedSong === nonSongAnswers.song5) {
                     score++;
                     container.classList.add("correct");
                 } else {
