@@ -18,6 +18,7 @@ document.getElementById("checkAnswers").addEventListener("click", function() {
         } else {
             container1.classList.add("wrong");
         }
+        updateScore();
     }, 100);
 
     let selectedSong2 = document.querySelector('input[name="song2"]:checked + label').textContent;
@@ -30,6 +31,7 @@ document.getElementById("checkAnswers").addEventListener("click", function() {
         } else {
             container2.classList.add("wrong");
         }
+        updateScore();
     }, 100);
 
     let selectedSong3 = document.querySelector('input[name="song3"]:checked + label').textContent;
@@ -42,7 +44,10 @@ document.getElementById("checkAnswers").addEventListener("click", function() {
         } else {
             container3.classList.add("wrong");
         }
+        updateScore();
     }, 100);
 
-    result.textContent = "Your score: " + score + " out of 3";
+    function updateScore() {
+        result.textContent = "Your score: " + score + " out of 3";
+    }
 });
